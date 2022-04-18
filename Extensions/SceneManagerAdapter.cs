@@ -110,7 +110,6 @@ public static  class SceneManagerAdapter
     static CoroutineRunner GetCoroutineRunner()
     {
         GameObject instance = new GameObject();
-        instance.isStatic = true;
         _coroutineRunner = instance.AddComponent<CoroutineRunner>();
         return _coroutineRunner;
     }
